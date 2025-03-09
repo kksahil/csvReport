@@ -38,4 +38,4 @@ Minimum Requirements :
   java -jar csvreport-0.0.1-SNAPSHOT.jar
    
 # **Output Result**
-!([../output.png)](https://github.com/kksahil/csvReport/blob/5f815efe9dd9320f8fb3f7b2866f8b5f210ef6bf/output.png)
+!([../output.png)](/blob/5f815efe9dd9320f8fb3f7b2866f8b5f210ef6bf/output.png)
