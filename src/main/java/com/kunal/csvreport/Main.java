@@ -15,6 +15,7 @@ public class Main {
 		//
 	  System.out.println(System.getProperty("user.dir"));
 		
+	    // generate index of record from csv file then perform manager count as well as salary calculations
 		record = utility.generateIndexedRecord("/employeeDetail.csv");
 		updatedRecord = utility.calculateManager(record);
 		calculatedSalary = utility.calculateSalary(updatedRecord);
@@ -22,6 +23,8 @@ public class Main {
 		System.out.println("\u001B[33m"
 				+ "Emp_ID  First_Name  Last_Name   Salary  Mgr_ID  No.Of_Mgr_Abv  Tot_SubOrdnt_Sal  No.Of_SubOrdnt  "
 				+ "Earning_Low_High  Sal_Diff  Min_Sal  Max_Sal " + "\u001B[0m");
+		
+		// populate the list on command prompt (or linux terminal)
 		for (Map.Entry<Integer, EmployeeDetail> map : calculatedSalary.entrySet())
 			// System.out.println(map.getValue().getAllValues());
 			System.out.printf("%6s%12s%11s%9s%8s%15s%18s%16s%18s%10s%9s%9s\n", map.getKey(),

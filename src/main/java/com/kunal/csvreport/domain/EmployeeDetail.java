@@ -1,5 +1,13 @@
 package com.kunal.csvreport.domain;
 
+
+/*
+ * This Class is use to hold the records of employee (from CSV file)  along with
+ * some calculations related to the numbers of Managers above employee,
+ * combined (total) salary of employee who reports to manager (for taking average salary)
+ *  number of employee who reports to manager, status whether the manager earning is
+ *  low or high, min and max range of salary a manager can earn and the salary difference 
+ */
 public class EmployeeDetail {
 	
 	String firstName;
